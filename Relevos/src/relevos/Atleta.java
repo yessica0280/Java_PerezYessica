@@ -29,7 +29,7 @@ public class Atleta extends Thread {
                 tiempo = (double) (Math.random() * (11 - 9) + 9); // Aquí se va a generar un número entre el 9 y 11 segundos que sera el tiempo que tarda en correr el atleta.
                 tiempoT += tiempo;
             } else {
-                System.out.println("Pasa el relevo y comienza a correr " + getName());
+                System.out.println("Pasa el relevo y comienza a correr " + getName()); // Aquí termina un corredor y entrega el testigo y comienza el otro corredor.
                 tiempo = (double) (Math.random() * (11 - 9) + 9);
                 tiempoT += tiempo;
             }
